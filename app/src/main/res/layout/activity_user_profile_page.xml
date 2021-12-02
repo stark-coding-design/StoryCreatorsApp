@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_profile_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory">
+
+    <TextView
+        android:id="@+id/user_profile_pic_selection"
+        android:layout_width="318dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/user_chooses_profile_pic"
+        android:fontFamily="@font/playfair_display_medium"
+        android:gravity="center"
+        android:text="@string/create_profile"
+        android:textColor="@color/vivid_sky_blue"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enter_user_name"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/user_enters_username"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:inputType="textPersonName"
+        android:fontFamily="serif"
+        android:textColorHint="@color/blue_crayola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_pic_selection" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:hint="@string/new_member_email"
+        android:fontFamily="serif"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/blue_crayola"
+        app:layout_constraintEnd_toEndOf="@id/enter_user_name"
+        app:layout_constraintStart_toStartOf="@id/enter_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/enter_user_name" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:hint="@string/sign_in_password"
+        android:textColorHint="@color/blue_crayola"
+        android:fontFamily="serif"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/enter_user_name"
+        app:layout_constraintStart_toStartOf="@id/enter_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:hint="@string/sign_in_password_verification"
+        android:fontFamily="serif"
+        android:inputType="textPassword"
+        android:textColorHint="@color/blue_crayola"
+        app:layout_constraintEnd_toEndOf="@id/enter_user_name"
+        app:layout_constraintStart_toStartOf="@id/enter_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/save_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/save"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

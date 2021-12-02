@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.stark.satos.storycreatorversion3"
+    android:versionCode="1"
+    android:versionName="1.0"
+    >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:icon="@drawable/google_icon_final"
+        android:roundIcon="@drawable/google_icon_final"
+        android:supportsRtl="true"
+        android:label="Story Creators"
+        android:theme="@style/Theme.StoryCreatorVersion3"
+        tools:ignore="AllowBackup">
+        <activity android:name=".firestorefunctionality.AddStoryToMainStoryActivity"
+            android:label="Story Creators"/>
+        <activity android:name=".ui.scifisection.ScifiStoryContentForRecyclerItem"
+            android:label="Sci-Fi"/>
+        <activity android:name=".ui.actionadventuresection.ActionAdventureStoryContentForRecyclerItem"
+            android:label="Action/Adventure"/>
+        <activity android:name=".ui.horrorsection.HorrorStoryContentForRecyclerItem"
+            android:label="Horror"/>
+        <activity android:name=".ui.fictionsection.FictionStoryContentForRecyclerItem"
+            android:label="Fiction"/>
+        <activity android:name=".ui.saved.DraftStoryContentForRecyclerItem"
+            android:label="Drafts"/>
+        <activity
+            android:name=".users.HomeLoginOrNewUser"
+            android:label="Story Creators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Home"/>
+        <activity
+            android:name=".users.UserProfile"
+            android:label="User Profile"/>
+        <activity
+            android:name=".ui.selectgalleryimage.UserImageSelect"
+            android:exported="true"
+            android:label="Select Profile Image"/>
+        <activity
+            android:name=".ui.fictionsection.FictionSectionActivity"
+            android:label="Fiction" />
+        <activity
+            android:name=".ui.horrorsection.HorrorSectionActivity"
+            android:label="Horror"/>
+        <activity
+            android:name=".ui.actionadventuresection.ActionAdventureActivity"
+            android:label="Action/Adventure" />
+        <activity
+            android:name=".ui.scifisection.ScifiActivity"
+            android:label="Sci-Fi" />
+    </application>
+</manifest>
