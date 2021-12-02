@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/ivory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/userImageSelectLayout">
+
+    <ImageView
+        android:id="@+id/userImageSelectViewBox"
+        android:layout_width="216dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/fire_opal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/userImageSelectButton"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/vivid_sky_blue"
+        android:text="@string/image_select_button"
+        android:fontFamily="serif"
+        android:textColor="@color/ivory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userImageSelectViewBox" />
+
+    <Button
+        android:id="@+id/userImageSaveButton"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/vivid_sky_blue"
+        android:textColor="@color/ivory"
+        android:text="@string/image_save_button"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="@+id/userImageSelectButton"
+        app:layout_constraintStart_toStartOf="@+id/userImageSelectButton"
+        app:layout_constraintTop_toBottomOf="@+id/userImageSelectButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

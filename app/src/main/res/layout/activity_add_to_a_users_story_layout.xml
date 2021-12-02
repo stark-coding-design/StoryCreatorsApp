@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory">
+
+    <TextView
+        android:id="@+id/draft_content_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/light_gray"
+        android:scrollbars="vertical"
+        android:fontFamily="serif"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:text="@string/main_story"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/edit_text_view_drafts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/edit_text_view_drafts"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/light_gray"
+        android:gravity="top|start"
+        android:maxLength="1500"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:paddingBottom="24dp"
+        android:hint="@string/add_to_the_story_here"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/draft_content_text_view"
+        app:layout_constraintStart_toStartOf="@id/draft_content_text_view"
+        app:layout_constraintTop_toBottomOf="@id/draft_content_text_view"
+
+        />
+
+    <TextView
+        android:id="@+id/word_counter_add_to_main_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/word_counter_add_to_main_story_2"
+        app:layout_constraintTop_toTopOf="@+id/word_counter_add_to_main_story_2" />
+
+    <TextView
+        android:id="@+id/word_counter_add_to_main_story_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/_1500"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_view_drafts"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_view_drafts"
+app:layout_constraintBottom_toBottomOf="@id/edit_text_view_drafts"        />
+
+
+
+    <Button
+        android:id="@+id/add_content_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_view_drafts" />
+
+    <Button
+        android:id="@+id/cancel_button_add_to_users_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/fui_cancel"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_view_drafts"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/add_content_submit"
+        app:layout_constraintTop_toTopOf="@+id/add_content_submit" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

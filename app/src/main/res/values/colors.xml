@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#353535</color>
+    <color name="blue">#1a53ff</color>
+    <color name="light_blue">#4d94FF</color>
+    <color name="sky_blue">#66CCFF</color>
+    <color name="red">#FF0000</color>
+    <color name="icon_blue">#1a1aff</color>
+    <color name="background_fiction_light_blue">#99d6ff</color>
+    <color name="orange">#FF7B00</color>
+    <color name="rifle_green">#4A5240</color>
+    <color name="dark_orchid">#9a48d0</color>
+    <color name="violet_crayola">#9a348e</color>
+    <color name="ivory">#F6F7EB</color>
+    <color name="silver">#c5c5c5</color>
+    <color name="see_through_ivory">#80F6F7EB</color>
+    <color name="fire_opal">#F25F5C</color>
+    <color name="light_gray">#d9d9d9</color>
+    <color name="vivid_sky_blue">#06BEE1</color>
+    <color name="space_cadet">#273469</color>
+    <color name="midnight_blue">#18206F</color>
+    <color name="blue_crayola">#0075f2</color>
+    <color name="maximum_blue_purple">#9f9fed</color>
+    <color name="purple_navy">#434371</color>
+    <color name="spanish_green">#058c42</color>
+</resources>
