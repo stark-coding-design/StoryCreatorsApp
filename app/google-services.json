@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "507513164732",
+    "project_id": "story-creators-ca273",
+    "storage_bucket": "story-creators-ca273.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507513164732:android:a59943c0cab7472fa7d1b9",
+        "android_client_info": {
+          "package_name": "com.stark.satos.storycreatorversion3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507513164732-6v66c6suh7sqsnsnseojnbpu163btijt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7k2hYr3RQ8JNLRzhX6UKSr0XAFbIh_AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507513164732-6v66c6suh7sqsnsnseojnbpu163btijt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
