@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Story Creator Version 3"
